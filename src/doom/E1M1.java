@@ -1,6 +1,6 @@
 package doom;
 
-public class E1M1 {
+public class E1M1 implements TUIElement {
     private int levelID = 1;
     private String levelName = "Hangar";
 
@@ -38,5 +38,25 @@ public class E1M1 {
 
     public E1M1() {
         playerPosition = new Vec2(startingPosistion);
+    }
+
+    @Override
+    public String requestTUIData(int row) {
+        return "";
+    }
+
+    @Override
+    public String getElementName() {
+        return "Map";
+    }
+
+    @Override
+    public int getWidth() {
+        return 25;
+    }
+
+    @Override
+    public int getHeight() {
+        return 22;
     }
 }
