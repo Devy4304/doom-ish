@@ -20,8 +20,10 @@ public class Player {
     }
     private int hp; // 0 - 100
     private int ammo;
+    private Guns currentGun;
 
     public Player() {
         this.hp = 100;
+        currentGun = Guns.PISTOL;
     }
 }
